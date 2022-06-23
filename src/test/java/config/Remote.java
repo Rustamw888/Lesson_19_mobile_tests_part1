@@ -12,10 +12,10 @@ public interface Remote extends Config {
 
     String app();
 
-    @DefaultValue("Samsung Galaxy S22 Ultra")
+    @DefaultValue("Google Pixel 4")
     String device();
 
-    @DefaultValue("12.0")
+    @DefaultValue("11.0")
     @Key("os_version")
     String osVersion();
 
