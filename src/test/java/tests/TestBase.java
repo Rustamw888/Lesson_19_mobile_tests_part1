@@ -9,6 +9,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
+import static com.codeborne.selenide.Selenide.back;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static helpers.Attach.sessionId;
@@ -26,6 +27,7 @@ public class TestBase {
     public void startDriver() {
         addListener("AllureSelenide", new AllureSelenide());
         open();
+        back();
     }
 
     @AfterEach
